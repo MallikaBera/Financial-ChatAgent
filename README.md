@@ -1,6 +1,6 @@
 # 📊 Financial Document QA Agent
 
-A Streamlit-based application that allows users to upload financial documents (like 10-Ks) and ask natural language questions about them. Built using OpenAI, LlamaIndex, and a modular RAG pipeline.
+A Streamlit-based application that allows users to upload financial documents and ask natural language questions about them. Built using OpenAI, LlamaIndex, and a modular RAG pipeline.
 
 ---
 
