@@ -4,6 +4,12 @@ A Streamlit-based application that allows users to upload financial documents an
 
 ---
 
+## 🔍 Preview
+Here’s a sneak peek of the Financial QA Assistant in action:
+
+![image](https://github.com/user-attachments/assets/2827eb0c-7078-4a92-bb8a-796059519d7d)
+
+
 ## 🚀 Features
 
 - 📁 PDF upload and dynamic parsing
