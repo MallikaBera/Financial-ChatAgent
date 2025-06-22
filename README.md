@@ -21,3 +21,13 @@ A Streamlit-based application that allows users to upload financial documents an
 ```bash
 git clone https://github.com/your-username/financial-agent.git
 cd financial-agent
+```
+
+## 👤 Created By / Contact
+
+Built with 💡 and lots of `streamlit run` by [Mallika](https://github.com/MallikaBera)
+
+- 📧 Email: mallika.bera4@gmail.com 
+- 🧪 GitHub: [github.com/your-github-username](https://github.com/MallikaBera)  
+
+Feel free to reach out for questions, ideas, or collaborations!
