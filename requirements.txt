@@ -1,11 +1,13 @@
 streamlit
+llama-index
 llama-index-core
 llama-index-readers-file
-transformers
-torch
+llama-index-embeddings-openai
 openai
 PyPDF2
-sentence-transformers # Added based on common use with cross-encoders, though transformers might be sufficient
-# Add any other specific versions if needed, e.g.,
-# transformers==4.30.2
-# torch==2.0.1
+transformers
+torch
+scikit-learn
+sentence-transformers
+faiss-cpu
+tqdm
