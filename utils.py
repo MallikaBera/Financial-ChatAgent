@@ -6,16 +6,14 @@ from llama_index.core.node_parser import SimpleNodeParser
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 import openai
-from google.colab import userdata
 
 
 # Set the API key
-# This should be handled securely in a real application, not hardcoded
-if 'OPENAI_API_KEY' in userdata.list():
-     os.environ['OPENAI_API_KEY'] = userdata.get('OPENAI_API_KEY')
-else:
-     # In a real app, you might raise an error or handle this differently
-     print("Warning: OPENAI_API_KEY not found in Colab secrets.")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+if openai.api_key is None:
+     # Raise an error 
+     print("Warning: OPENAI_API_KEY not found.")
 
 
 def parse_pdf(uploaded_file):
@@ -88,10 +86,6 @@ def load_reranker_model():
         st.error(f"Error loading reranker model: {e}")
         return None, None
 
-# You would also include your rerank_with_cross_encoder, retrieve_and_rerank,
-# build_prompt, and call_gpt_35 functions here, perhaps imported
-# from financial_agent_functions.py or redefined here.
-# For simplicity, let's assume they are also placed in this file.
 
 # Including the financial_agent_functions here
 def rerank_with_cross_encoder(query, nodes, tokenizer, model):

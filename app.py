@@ -1,12 +1,10 @@
 import streamlit as st
 import os
 from utils import load_llama_index_components, load_reranker_model, retrieve_and_rerank, build_prompt, call_gpt_35
-from google.colab import userdata
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
 from llama_index.core.node_parser import SimpleNodeParser
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
-# from google.colab import drive # No longer needed for reading from Drive
 
 st.set_page_config(page_title="Financial Document QA", layout="wide")
 st.title("📊 Financial Assistant")
